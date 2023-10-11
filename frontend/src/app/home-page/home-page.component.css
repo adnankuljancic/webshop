@@ -1,0 +1,8 @@
+#bg-video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+app-search-bar {
+  width: 80%;
+}

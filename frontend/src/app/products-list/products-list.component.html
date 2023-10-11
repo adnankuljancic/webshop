@@ -1,0 +1,51 @@
+<div class="container">
+    <app-search-bar></app-search-bar>
+    <div class="d-flex">
+      <select class="form-select mx-3" (change)="onSelectBrand($event)" aria-label="Default select example">
+        <option selected hidden>Filter by brand</option>
+        <option value=0>All brands</option>
+        <option *ngFor="let brand of brands" [value]="brand.brandId"> {{brand.name}}</option>
+      </select>
+      <select class="form-select mx-3" (change)="onSelectOrderBy($event)" aria-label="Default select example">
+        <option selected value=0>Order by: Default</option>
+        <option value=1>Order by name ascending </option>
+        <option value=2>Order by name descending</option>
+      </select>
+    </div>
+    <app-add-product-button *ngIf="admin" ></app-add-product-button>
+    <div class="d-flex flex-wrap">
+        <div class="card m-3" style="width: 25rem;" *ngFor="let product of productList" routerLink="{{ product.productId }}">
+            <img src="{{ product.image }} " class="img-thumbnail" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.productName }}</h5>
+                 <p class="card-text">{{ product.productDescription }}</p>
+                 <a href="#" class="btn btn-secondary me-3" routerLink="{{product.productId}}">Add to cart</a>
+                 <a href="#" class="btn btn-primary" routerLink="{{product.productId}}">Buy now</a>
+            </div>
+        </div>
+    </div>
+    <app-add-product-button *ngIf="admin"></app-add-product-button>
+    <nav aria-label="Page navigation example">
+
+        <ul class="pagination justify-content-end">
+  
+          <li class="page-item" >
+  
+            <a class="page-link" (click)="previousPage()">Previous</a>
+            <!-- <a class="page-link">Previous</a> -->
+  
+          </li>
+  
+          <li class="page-item"><a class="page-link">{{page}}</a></li>
+  
+          <li class="page-item">
+  
+            <a class="page-link" (click)="nextPage()">Next</a>
+            <!-- <a class="page-link">Next</a> -->
+  
+          </li>
+  
+        </ul>
+  
+      </nav>
+</div>

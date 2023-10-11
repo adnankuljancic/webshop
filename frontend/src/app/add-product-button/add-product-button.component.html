@@ -1,0 +1,72 @@
+<button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+    product</button>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-addProduct">
+                    <form [formGroup]="productForm">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Product name" formControlName="productName">
+                            <label for="floatingInput">Product name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Product description" formControlName="productDescription">
+                            <label for="floatingInput">Product description</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Image URL" formControlName="image">
+                            <label for="floatingInput">Image URL</label>
+                        </div>
+                        <div class="form-floating d-flex my-2">
+
+                            <select class="form-select" aria-label="Default select example" formControlName="categoryId">
+                                <option [value]="category.categoryId" *ngFor="let category of categories">{{ category.categoryName }}</option>
+                            </select>
+                            <select class="form-select" aria-label="Default select example" formControlName="brandId">
+                                <option [value]="brand.brandId" *ngFor="let brand of brands">{{ brand.name }}</option>
+                            </select>
+
+                        </div>
+                    </form>
+                    <form [formGroup]="sizeForm">
+                        <div class="d-flex">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputSize" placeholder="Size"
+                                    required formControlName="size">
+                                <label for="floatingInputSize">Size</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputPrice" placeholder="Price"
+                                    required formControlName="price">
+                                <label for="floatingInputPrice">Price</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="In stock"
+                                    required formControlName="quantity">
+                                <label for="floatingInput">In stock</label>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn" (click)="addSize()">Add size</button>
+
+                    <div class="d-flex" *ngFor="let sizeListItem of productList">
+                        <p>{{sizeListItem.size}} </p>
+                        <p>{{sizeListItem.price}} </p>
+                        <p>{{sizeListItem.quantity}}</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" #closebutton data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="saveProduct()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

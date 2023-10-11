@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #32cd32;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 mb-2 mt-2" routerLink="">
+        <img src="/assets/images/supplement_station_logo.png" alt="image" width="40px" >
+      </a>
+      <div class="d-flex" *ngIf="loggedIn else noUser">
+        <a routerLink="/cart"><i class="bi bi-bag"></i></a> 
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-fill m-5"></i>
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/purchase-history">Purchase history</a></li>
+            <li><a class="dropdown-item" (click)="logOut()">Log out</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <ng-template #noUser>
+      <div>
+        <a href="#" class="m-5" id="auth" routerLink="/sign-up">Sign up</a>
+        <a class="me-5" id="auth" routerLink="/log-in">Log in</a>
+      </div>
+    </ng-template>
+      
+      
+    </div>
+ </nav>

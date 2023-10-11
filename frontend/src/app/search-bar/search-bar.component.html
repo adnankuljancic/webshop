@@ -1,0 +1,17 @@
+
+<div class="container">
+<div class="d-flex my-3 row" c> 
+   <div class="col-9">
+      <input  type="text" class="form-control input-lg" [(ngModel)]="searched" placeholder="Search for items…" aria-label="Search">
+   </div>
+   <div class="col-2">
+    <select class="form-select" (change)="onSelect($event)" aria-label="Default select example">
+      <option selected value=0>All categories</option>
+      <option *ngFor="let category of categories" [value]="category.categoryId"> {{category.categoryName}}</option>
+    </select>
+   </div>
+   <div class="col-1">
+      <button class="btn btn-primary" type="submit" (click)="search()" >Search</button>
+   </div>
+</div>
+</div>

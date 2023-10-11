@@ -1,0 +1,15 @@
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\bin\Debug\net6.0\SupplementStationBLL.deps.json
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\bin\Debug\net6.0\SupplementStationBLL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\bin\Debug\net6.0\SupplementStationBLL.pdb
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\bin\Debug\net6.0\SupplementStationDAL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\bin\Debug\net6.0\SupplementStationDAL.pdb
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.csproj.AssemblyReference.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.AssemblyInfoInputs.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.AssemblyInfo.cs
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.csproj.CoreCompileInputs.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.csproj.CopyComplete
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\refint\SupplementStationBLL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\SupplementStationBLL.pdb
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationBLL\obj\Debug\net6.0\ref\SupplementStationBLL.dll

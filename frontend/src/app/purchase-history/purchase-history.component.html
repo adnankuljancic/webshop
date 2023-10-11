@@ -1,0 +1,18 @@
+<div class="m-3">
+<h1 class="m-3">Purchase history</h1>
+<div *ngFor="let order of userOrders">
+    <h3> Order number: {{order.orderId}} </h3> 
+    <div class="container"></div>
+    <div class="row" *ngFor="let orderItem of order.orderItemsList">
+    <div class="col-4">
+        <img [src]="orderItem.image" class="img-thumbnail" alt="Product image">   
+    </div>
+    <div class="col-8 my-5">
+        <h4>{{orderItem.name}}</h4>
+        <p>Price: {{orderItem.price}}KM</p>
+    </div>
+    </div>
+</div>
+
+
+</div>

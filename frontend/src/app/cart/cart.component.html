@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="row my-3" *ngFor="let cartItem of cartItemList">
+        <div class="col-4">
+            <img [src]="cartItem.productSize.product.image" class="img-thumbnail " alt="Supplement image">
+        </div>
+        <div class="col-8 my-3">
+            <h3> {{ cartItem.productSize.product.productName }}</h3>
+            <p> {{ cartItem.productSize.product.productDescription}} </p>
+            <h4> Product price: {{ cartItem.productSize.price }}KM</h4>
+            <div class="d-flex">
+                <h4>Quantity:  </h4> <input (change)="TotalForItem(cartItem.cartItemId)" id="quantity{{cartItem.cartItemId}}" type="number" min="1" [max]="cartItem.productSize.quantity" value="{{cartItem.quantity}}" id="quantity">
+            </div>
+            <p>Total price {{cartItem.quantity * cartItem.productSize.price}}KM </p>
+            <div class="d-flex">
+            <p>Select for purchase: </p><input type="checkbox" #checkbox class="mx-3 mb-2" (change)="checkboxMarked(cartItem)">
+            <p>Delete item:</p>
+            <div class="btn mx-2" (click)="DeleteItem(cartItem.cartItemId)"><i class="bi bi-trash"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5" *ngIf="totalPositive">
+        <h5>Total for products: {{total}}KM</h5>
+        <h5>Shipping: {{shipping}}KM</h5>
+        <h2>Total: {{total+shipping}}KM</h2>
+        <div class="btn btn-primary" (click)="Checkout()">Checkout</div>
+    </div>
+</div>

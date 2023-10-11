@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="row my-3" *ngFor="let checkoutItem of checkoutItemsList">
+        <div class="col-4">
+            <img [src]="checkoutItem.productSize.product.image" class="img-thumbnail " alt="Supplement image">
+        </div>
+        <div class="col-8 my-3">
+            <h3> {{ checkoutItem.productSize.product.productName }}</h3>
+            <p> {{ checkoutItem.productSize.product.productDescription}} </p>
+            <h4> Product price: {{ checkoutItem.productSize.price }}KM</h4>
+            <div class="d-flex">
+                <h4>Quantity: </h4> <input type="number" min="1" value="{{checkoutItem.quantity}}" id="quantity"
+                    disabled>
+            </div>
+            <p>Total price {{checkoutItem.quantity * checkoutItem.productSize.price}}KM </p>
+        </div>
+    </div>
+    <div class="my-5">
+        <h5>Total for products: {{total}}KM</h5>
+        <h5>Shipping: {{shipping}}KM</h5>
+        <h2>Total: {{total+shipping}}KM</h2>
+        <div class="btn btn-primary" (click)="ConfirmCheckout()">Confirm checkout</div>
+    </div>
+</div>
+

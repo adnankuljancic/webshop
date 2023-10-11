@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import 'ngx-toastr/toastr';
+.btn-primary {
+    background-color: #32cd32;
+    border-color: #32cd32;
+}
+.btn-primary:hover {
+    background-color: #15c415;
+}

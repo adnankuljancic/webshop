@@ -1,0 +1,14 @@
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\bin\Debug\net6.0\SupplementStationDAL.deps.json
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\bin\Debug\net6.0\SupplementStationDAL.runtimeconfig.json
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\bin\Debug\net6.0\SupplementStationDAL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\bin\Debug\net6.0\SupplementStationDAL.pdb
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.csproj.AssemblyReference.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.AssemblyInfoInputs.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.AssemblyInfo.cs
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.csproj.CoreCompileInputs.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\refint\SupplementStationDAL.dll
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.pdb
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\SupplementStationDAL.genruntimeconfig.cache
+C:\Users\adnan.kuljancic\source\repos\SupplementStationAPI\SupplementStationDAL\obj\Debug\net6.0\ref\SupplementStationDAL.dll
